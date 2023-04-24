@@ -32,6 +32,14 @@ local plugins = {
     "lewis6991/gitsigns.nvim",
     opts = overrides.gitsigns,
   },
+
+  {
+    "sindrets/diffview.nvim",
+    config = function()
+      require("diffview").setup()
+    end,
+    event = "VeryLazy",
+  },
 }
 
 return plugins
