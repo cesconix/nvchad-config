@@ -16,14 +16,6 @@ local plugins = {
   },
 
   {
-    "windwp/nvim-ts-autotag",
-    config = function()
-      require("nvim-ts-autotag").setup()
-    end,
-    event = "VeryLazy",
-  },
-
-  {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
   },
@@ -37,6 +29,14 @@ local plugins = {
     "sindrets/diffview.nvim",
     config = function()
       require("diffview").setup()
+    end,
+    event = "VeryLazy",
+  },
+
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
     end,
     event = "VeryLazy",
   },
